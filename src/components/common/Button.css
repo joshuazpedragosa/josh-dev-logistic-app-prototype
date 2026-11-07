@@ -1,0 +1,66 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 22px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn--primary {
+  background: var(--yellow-400);
+  color: #1a1505;
+  box-shadow: 0 8px 24px -10px rgba(250, 204, 21, 0.7);
+}
+
+.btn--primary:hover {
+  background: var(--yellow-300);
+  box-shadow: 0 10px 28px -8px rgba(250, 204, 21, 0.8);
+}
+
+.btn--outline {
+  background: transparent;
+  border-color: var(--yellow-400);
+  color: var(--yellow-300);
+}
+
+.btn--outline:hover {
+  background: rgba(250, 204, 21, 0.12);
+  color: var(--yellow-200);
+}
+
+.btn--ghost {
+  background: rgba(250, 204, 21, 0.08);
+  color: var(--yellow-300);
+}
+
+.btn--ghost:hover {
+  background: rgba(250, 204, 21, 0.16);
+}
+
+.btn--lg {
+  min-height: 52px;
+  padding: 14px 28px;
+  font-size: 1rem;
+}
+
+.btn--block {
+  width: 100%;
+}
